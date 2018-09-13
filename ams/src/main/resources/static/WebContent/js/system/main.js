@@ -6,10 +6,17 @@ $(function() {
     $("#tabs .tabs-inner:first").on("contextmenu",function(e){
     	 e.preventDefault();
     })
+
+
+    //测试
+    $('#_easyui_tree_4').click(function(){
+        addTab('banner信息查询', ctx + '/test/banner/page');
+    })
+
     // 显示系统时间
     clockon();
     // 初始化左侧菜单
-    InitLeftMenu();
+     InitLeftMenu();
     tabClose();
     tabCloseEven();
 
@@ -78,6 +85,7 @@ $(function() {
         });
 
     });
+
 });
 
 // 初始化左侧
