@@ -26,4 +26,12 @@ public class TestController {
     public String test1(){
         return "main";
     }
+
+    /**
+     * 查询banner信息
+     */
+    public String bannerPage(){
+
+    }
+
 }

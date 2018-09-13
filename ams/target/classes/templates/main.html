@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Apass电商后台管理系统</title> <#include "./common/component/library.html"/>
+<title>后台管理系统</title> <#include "./common/component/library.html"/>
 <script type="text/javascript"
 	src="${rc.contextPath}/WebContent/js/system/main.js"></script>
 </head>
@@ -28,7 +28,7 @@
 				href="${rc.contextPath}/logout" style="color: white;">退出登陆</a> </span> <span
 				style="padding-left: 10px; font-size: 24px; font-weight: bold;"><img
 				src="${rc.contextPath}/WebContent/images/blocks.gif" width="20"
-				height="20" align="absmiddle" style="margin-right: 8px;" alt="" />Apass电商后台管理系统</span>
+				height="20" align="absmiddle" style="margin-right: 8px;" alt="" />后台管理系统</span>
 		</div>
 	</div>
 	<!--底部说明-->
@@ -39,13 +39,23 @@
 	<div id="west" region="west" split="true" title="导航菜单"
 		style="width: 180px;" class="panel-body layout-body">
 			<!--导航内容-->
-			<ul id="leftMenu"></ul>
+			<ul id="leftMenu" class="easyui-tree">
+				<li>
+					<span>会员管理</span>
+					<ul>
+
+						<li><span>会员信息</span></li>
+						<li><span>File1</span></li>
+					</ul>
+				</li>
+				<li><span>banner信息管理</span></li>
+			</ul>
 	</div>
 	<!--主页面显示-->
 	<div id="mainPanle" region="center" style="overflow-y: hidden">
 		<div id="tabs" class="easyui-tabs" fit="true" border="false">
 			<div title="首页" style="padding: 20px; overflow: hidden;" id="home">
-				<h1>欢迎使用Apass电商后台管理系统</h1>
+				<h1>欢迎使用后台管理系统</h1>
 			</div>
 		</div>
 	</div>
